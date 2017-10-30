@@ -1,0 +1,51 @@
+.plateau-wrapper {
+    margin-top: 50px;
+}
+.plateau {
+    background-color: antiquewhite;
+    position: relative;
+}
+.grid {
+    min-height: 50px;
+    min-width: 50px;
+    border: 1px solid gray;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.camera {
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+}
+.camera.camera-S {
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 30px solid gray;
+}
+.camera.camera-N {
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 30px solid gray;
+    top: 0;
+}
+.camera.camera-E {
+    border-top: 25px solid transparent;
+    border-right: 30px solid gray;
+    border-bottom: 25px solid transparent;
+    right: 0;
+}
+.camera.camera-W {
+    border-top: 25px solid transparent;
+    border-left: 30px solid gray;
+    border-bottom: 25px solid transparent;
+}
+
+.output-wrapper {
+    margin-top: 20px;
+}
+.output {
+    background-color: lightgray;
+    padding: 20px;
+}

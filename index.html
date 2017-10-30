@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MarsRover</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body id="app">
+
+<div id="step-1">
+    <form action="/" method="post" id="initPlateauForm">
+        <input type="text" id="plateauSize" name="plateauSize" value="5 5">
+        <button type="submit" id="initPlateau">Initialize Plateau</button>
+    </form>
+</div>
+
+<div id="step-2">
+    <form action="/" method="post" id="placeRoverForm">
+        <input type="text" id="roverPosition" name="roverPosition" placeholder="Position: X Y O" value="1 2 N"><br>
+        <input type="text" id="roverCommand" name="roverCommand" placeholder="Enter command" value="LMLMLMLMM"><br>
+        <button type="submit" id="placeRover">Deploy Rover and apply Command</button>
+    </form>
+</div>
+
+<div class="plateau-wrapper">
+    <h4>Mars Plateau</h4>
+    <div class="plateau" id="plateau"></div>
+</div>
+
+<div class="output-wrapper">
+    <h4>Output</h4>
+    <div class="output" id="output"></div>
+</div>
+
+<script src="lib/Output.js"></script>
+<script src="lib/Plateau.js"></script>
+<script src="lib/MarsRover.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
